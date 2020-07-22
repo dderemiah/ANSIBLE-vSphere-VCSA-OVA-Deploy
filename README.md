@@ -227,3 +227,6 @@ localhost                  : ok=20   changed=14   unreachable=0    failed=0    s
 
 
 
+#### TO DO ####
+
+    - Host folder : Move the Cluster compute and Edge into their respective folder ATX 
