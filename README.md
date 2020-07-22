@@ -75,14 +75,16 @@ The following files will be created and needed to deploy the OVF to the ESXi hos
 ### Code architecture ###
 
 ```
-├── README.md
-├── answerfile.yml
-├── deploy.yml
-├── playbooks
-│   ├── 00-deploy-vcsa.yml
-│   ├── 01-basic-config-vcsa.yml
-│   ├── 02-add-hosts.yml
-└── vcenter-properties.yml
+|-- README.md
+|-- answerfile.yml
+|-- deploy.yml
+|-- playbooks
+|   |-- 00-deploy-vcsa.yml
+|   |-- 01-basic-config-vcsa.yml
+|   |-- 02-add-hosts.yml
+|   |-- 03-storage.yml
+|   `-- 99-add-networking.yml
+`-- vcenter-properties.yml
 ```
 
 I wanted to have something flexible so that I could test a single playbook without impacting the code on other playbooks.
@@ -92,6 +94,7 @@ Deploy.yml is the main playbook to run. It will call each playbooks in order.
 - import_playbook: playbooks/00-deploy-vcsa.yml
 - import_playbook: playbooks/01-basic-config-vcsa.yml
 - import_playbook: playbooks/02-add-hosts.yml
+- import_playbook: playbooks/03-storage.yml
 ```
 
 
