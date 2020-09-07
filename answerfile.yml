@@ -16,7 +16,7 @@ vcenter_dns_servers: '172.31.100.20'
 domain: 'megasp.net'
 searchpath: ""
 vcsa_size: 'tiny'
-vcsa_ova_file: '/home/nmichel/lab-images/VMware-vCenter-Server-Appliance-7.0.0.10300-16189094_OVF10.ova'
+vcsa_ova_file: '/home/danield/lab-images/VMware-vCenter-Server-Appliance-7.0.0.10300-16189094_OVF10.ova'
 datastore: 'Synology-NFS-Datastore'
 esxi_network: 'VM Network'
 datacenter_name: 'ATX-01'
