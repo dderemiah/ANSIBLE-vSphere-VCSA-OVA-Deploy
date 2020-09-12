@@ -15,7 +15,7 @@
         validate_certs: no
         inject_ovf_env: true
         datastore: "{{ datastore }}"
-        networks: "{u'VM Network':u'{{ esxi_network }}'}"
+        networks: "{u'Network 1':u'{{ esxi_network }}'}"
         properties:
           DeploymentOption.value: "{{ vcsa_size }}" # vCenter t-shirt size: tiny,small,medium,large, or infrastructure
           guestinfo.cis.appliance.net.addr.family: "ipv4" # ipv4 or ipv6
@@ -31,11 +31,11 @@
           guestinfo.cis.vmdir.domain-name: "{{ domain }}"
           guestinfo.cis.vmdir.username: "{{ vcenter_username }}"
           guestinfo.cis.vmdir.password: "{{ vcenter_password }}" # SSO Password for administrator@vsphere.local
-          guestinfo.cis.appliance.ntp.servers: "us.pool.ntp.org"
+          guestinfo.cis.appliance.ntp.servers: "ntp-1.wrs.com"
           guestinfo.cis.appliance.ssh.enabled: "True"
           domain: "{{ domain }}"
           searchpath: "{{ searchpath }}"
       delegate_to: localhost
 
-    - pause: 
+    - pause:
         minutes: 40
