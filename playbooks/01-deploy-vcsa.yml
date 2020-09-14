@@ -33,6 +33,7 @@
           guestinfo.cis.vmdir.password: "{{ vcenter_password }}" # SSO Password for administrator@vsphere.local
           guestinfo.cis.appliance.ntp.servers: "ntp-1.wrs.com"
           guestinfo.cis.appliance.ssh.enabled: "True"
+          guestinfo.cis.appliance.root.shell: "/bin/bash"
           domain: "{{ domain }}"
           searchpath: "{{ searchpath }}"
       delegate_to: localhost
