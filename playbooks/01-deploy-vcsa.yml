@@ -21,20 +21,20 @@
           guestinfo.cis.appliance.net.addr.family: "ipv4" # ipv4 or ipv6
           guestinfo.cis.appliance.net.mode: "static" # static or dhcp
           guestinfo.cis.appliance.net.addr: "{{ vcenter_net_ip_address }}"
-          guestinfo.cis.appliance.net.pnid: "{{ vcenter_hostname }}.{{ domain }}" # FQDN of vcenter server
+          guestinfo.cis.appliance.net.pnid: "{{ vcenter_hostname }}.{{ dnsdomain }}" # FQDN of vcenter server
           guestinfo.cis.appliance.net.prefix: "{{ vcenter_net_prefix }}" # netmask length, CIDR notation, i.e. '24'
           guestinfo.cis.appliance.net.gateway: "{{ vcenter_net_gateway }}"
           guestinfo.cis.appliance.net.dns.servers: "{{ vcenter_dns_servers }}" # Comma separated list of IP addresses of DNS servers.
           guestinfo.cis.appliance.root.passwd: "{{ vcenter_password }}"
           guestinfo.cis.ceip_enabled: "False"
           guestinfo.cis.deployment.autoconfig: "True" # Auto-configure after deployment
-          guestinfo.cis.vmdir.domain-name: "{{ domain }}"
+          guestinfo.cis.vmdir.domain-name: "{{ ssodomain }}"
           guestinfo.cis.vmdir.username: "{{ vcenter_username }}"
           guestinfo.cis.vmdir.password: "{{ vcenter_password }}" # SSO Password for administrator@vsphere.local
           guestinfo.cis.appliance.ntp.servers: "ntp-1.wrs.com"
           guestinfo.cis.appliance.ssh.enabled: "True"
           guestinfo.cis.appliance.root.shell: "/bin/bash"
-          domain: "{{ domain }}"
+          domain: "{{ ssodomain }}"
           searchpath: "{{ searchpath }}"
       delegate_to: localhost
 
