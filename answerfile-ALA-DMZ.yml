@@ -1,0 +1,18 @@
+## ALA DMZ VARIABLES ##
+
+datacenter_name: 'ALA-DMZ-DC'
+cluster_name_ala: 'ALA-Cluster'
+cluster_name_san: 'SAN-Cluster'
+esxi_ala_fqdn:
+  - 'ala-vmdmz01.wrs.com'
+  - 'ala-vmdmz02.wrs.com'
+esxi_san_fqdn:
+  - 'san-vmdmz01.wrs.com'
+  - 'san-vmdmz02.wrs.com'
+
+host_folder_name_edge: 'ALA-01-EDGE'
+host_folder_name_compute: 'ALA-01-COMPUTE'
+vm_folder_name_infrastructure: 'DC-INFRASTRUCTURE'
+vm_folder_name_nsx_infrastructure: 'NSX-INFRASTRUCTURE'
+vm_folder_name_tenant_01: 'COMPUTE-TENANT-01'
+vm_folder_name_tenant_02: 'COMPUTE-TENANT-02'
