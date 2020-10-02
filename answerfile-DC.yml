@@ -1,0 +1,12 @@
+## ALA DMZ VARIABLES ##
+
+datacenter_name: 'YOW-DC'
+cluster_name_yow: 'YOW-Cluster'
+esxi_yow_fqdn:
+  - 'yow-vmprod01.wrs.com'
+  - 'yow-vmprod02.wrs.com'
+  - 'yow-vmprod03.wrs.com'
+vm_folder_names:
+  - 'IT'
+  - 'ENG'
+  - 'NETWORK'
