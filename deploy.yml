@@ -7,7 +7,7 @@
       prompt: "What is the ESXi Password? "
       private: yes
     - name: "vcenter_password"
-      prompt: "What is the vCenter Password? "
+      prompt: "What is the vCenter/SSO Password? "
       private: yes
   #   - name: "vcenter7_license"
   #     prompt: "What is the License for vCenter? "
