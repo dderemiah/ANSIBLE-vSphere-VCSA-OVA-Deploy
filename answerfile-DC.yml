@@ -1,7 +1,11 @@
 ## ALA DMZ VARIABLES ##
+esxi_password: 'REDACT'
+vcenter_password: 'REDACT'
 
 datacenter_name: 'YOW-DC'
-cluster_name_yow: 'YOW-Cluster'
+cluster_name_list:
+  - 'YOW-Cluster'
+  - 'OTP-Cluster'
 esxi_yow_fqdn:
   - 'yow-vmprod01.wrs.com'
   - 'yow-vmprod02.wrs.com'

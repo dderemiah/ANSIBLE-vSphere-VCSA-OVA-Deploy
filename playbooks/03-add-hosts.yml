@@ -4,24 +4,24 @@
   gather_facts: false
   vars_files:
     - ../answerfile.yml
-    - ../answerfile-ALA-DMZ.yml
+    - ../answerfile-DC.yml
 
   tasks:
 
-    - name: Add ESXi Host to vCenter - SANDIEGO
+    - name: Add ESXi Hosts to vCenter
       vmware_host:
         validate_certs: no
         hostname: '{{ vcenter_hostname }}.{{ dnsdomain }}'
         username: '{{ vcenter_username }}'
         password: '{{ vcenter_password }}'
         datacenter_name: '{{ datacenter_name }}'
-        cluster: '{{ cluster_name_san }}'
+        cluster: '{{ cluster_name_yow }}'
         esxi_hostname: '{{ item }}'
         esxi_username: '{{ esxi_username }}'
         esxi_password: '{{ esxi_password }}'
         state: present
       delegate_to: localhost
-      with_items: '{{ esxi_san_fqdn }}'
+      with_items: '{{ esxi_yow_fqdn }}'
 
     # - name: Add ESXi Host to vCenter - Alameda
     #   vmware_host:

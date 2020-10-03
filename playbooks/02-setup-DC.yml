@@ -26,20 +26,21 @@
         state: present
       delegate_to: localhost
 
-    - name: Create Cluster - Management - EDGE
+    - name: Create Clusters - All
       vmware_cluster:
         validate_certs: no
         hostname: '{{ vcenter_hostname }}.{{ dnsdomain }}'
         username: '{{ vcenter_username }}'
         password: '{{ vcenter_password }}'
         datacenter_name: '{{ datacenter_name }}'
-        cluster_name: "{{ cluster_name_yow }}"
-        enable_ha: True
+        cluster_name: "{{ item }}"
+        # enable_ha: True
         ha_vm_monitoring: vmMonitoringOnly
         enable_drs: True
         drs_default_vm_behavior: partiallyAutomated
       register: cl_result
       delegate_to: localhost
+      with_items: '{{ cluster_name_list }}'
 
 
     # - name: Create Host Folder - COMPUTE
