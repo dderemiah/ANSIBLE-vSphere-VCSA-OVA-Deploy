@@ -34,8 +34,8 @@
         password: '{{ vcenter_password }}'
         datacenter_name: '{{ datacenter_name }}'
         cluster_name: "{{ item }}"
-        # enable_ha: True
-        ha_vm_monitoring: vmMonitoringOnly
+        enable_ha: False
+        # ha_vm_monitoring: vmMonitoringOnly
         enable_drs: True
         drs_default_vm_behavior: partiallyAutomated
       register: cl_result
