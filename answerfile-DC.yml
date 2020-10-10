@@ -1,15 +1,15 @@
 ## ALA DMZ VARIABLES ##
-esxi_password: 'REDACT'
-vcenter_password: 'REDACT'
+# esxi_password: 'REDACTED'
+# vcenter_password: 'REDACTED'
 
-datacenter_name: 'YOW-DC'
+datacenter_name: 'APAC-DC'
 cluster_name_list:
-  - 'YOW-Cluster'
-  - 'OTP-Cluster'
+  - 'PEK-Cluster'
+  - 'CTU-Cluster'
+  - 'TOK-Cluster'
 esxi_yow_fqdn:
-  - 'yow-vmprod01.wrs.com'
-  - 'yow-vmprod02.wrs.com'
-  - 'yow-vmprod03.wrs.com'
+  - 'pek-vmprod01.wrs.com'
+  - 'pek-vmprod02.wrs.com'
 vm_folder_names:
   - 'IT'
   - 'ENG'

@@ -3,15 +3,15 @@
 #BEGIN Deploy answers
 esxi_username: 'root'
 # use ala-vmprod04
-esxi_ip_address: 'yow-vmprod03'
+esxi_ip_address: 'pek-vmprod02'
 # esxi_password: 'height6Track2Tall'
 vcenter_username: 'administrator@vsphere.local'
 # vcenter_password: '5WEh989_94501'
-vcenter_virtual_machine_name: 'YOW-VC-PROD1-v67'
-vcenter_hostname: 'yow-vc-prod1'
-vcenter_net_ip_address: '128.224.195.58'
+vcenter_virtual_machine_name: 'PEK-VC-PROD1-v67'
+vcenter_hostname: 'pek-vc-prod1'
+vcenter_net_ip_address: '128.224.154.70'
 vcenter_net_prefix: '24'
-vcenter_net_gateway: '128.224.195.1'
+vcenter_net_gateway: '128.224.154.70'
 vcenter_dns_servers: '147.11.136.64'
 ssodomain: 'vsphere.local'
 dnsdomain: 'corp.ad.wrs.com'
@@ -19,6 +19,6 @@ searchpath: "wrs.com"
 vcsa_size: 'small'
 #vcsa_ova_file: '/home/danield/lab-images/OVA/v7/VMware-vCenter-Server-Appliance-7.0.0.10400-16386292_OVF10.ova'
 vcsa_ova_file: '/home/danield/lab-images/OVA/v67/VMware-vCenter-Server-Appliance-6.7.0.14000-9451876_OVF10.ova'
-datastore: 'VMLUN001'
+datastore: 'PEK-LOCALDS2'
 esxi_network: 'VM_195'
 #END Deploy answers
