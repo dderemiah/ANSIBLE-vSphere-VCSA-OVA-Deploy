@@ -26,7 +26,7 @@
         # vsphere7_license: "{{ vsphere7_license }}"
 
 
-# - import_playbook: playbooks/01-deploy-vcsa.yml
-# - import_playbook: playbooks/02-setup-DC.yml
+- import_playbook: playbooks/01-deploy-vcsa.yml
+- import_playbook: playbooks/02-setup-DC.yml
 - import_playbook: playbooks/03-add-hosts.yml
 # - import_playbook: playbooks/04-storage.yml
