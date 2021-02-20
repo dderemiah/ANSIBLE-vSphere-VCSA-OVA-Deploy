@@ -23,22 +23,6 @@
       delegate_to: localhost
       with_items: '{{ esxi_yow_fqdn }}'
 
-    # - name: Add ESXi Host to vCenter - Alameda
-    #   vmware_host:
-    #     validate_certs: no
-    #     hostname: '{{ vcenter_hostname }}.{{ dnsdomain }}'
-    #     username: '{{ vcenter_username }}'
-    #     password: '{{ vcenter_password }}'
-    #     datacenter_name: '{{ datacenter_name }}'
-    #     cluster: '{{ cluster_name_ala }}'
-    #     esxi_hostname: '{{ item }}'
-    #     esxi_username: '{{ esxi_username }}'
-    #     esxi_password: '{{ esxi_password }}'
-    #     state: present
-    #   delegate_to: localhost
-    #   with_items: '{{ esxi_ala_fqdn }}'
-
-
 
     # - name: Add a new vCenter license - vCenter
     #   vcenter_license:
