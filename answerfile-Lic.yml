@@ -6,3 +6,6 @@ vcenter7_license:
   - "01226-2CH5L-Q8X9T-0U9K4-3MEN0" #4 vCenters
 #VSAN 8CPU
 vsan_license: "MN220-D7LD6-98C78-0P2RM-19GJJ"
+#ESXi 7
+esxi_licenses:
+  - "E509L-FTJEK-N8JGJ-0M920-C5D0J" # 44 x v7
