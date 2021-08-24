@@ -3,7 +3,7 @@
 #BEGIN Deploy answers
 esxi_username: 'root'
 # use ala-vmprod04
-esxi_ip_address: 'ala-vmtaa01'
+esxi_ip_address: '147.11.128.11' # ala-vmtaa01.wrs.com
 esxi_password: '5WEh989_94501'
 vcenter_username: 'administrator@vsphere.local'
 vcenter_password: '5WEh989_94501'
