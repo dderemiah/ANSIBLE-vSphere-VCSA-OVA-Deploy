@@ -3,22 +3,22 @@
 #BEGIN Deploy answers
 esxi_username: 'root'
 # use ala-vmprod04
-esxi_ip_address: '147.11.128.11' # ala-vmtaa01.wrs.com
+esxi_ip_address: '147.11.141.103' # ala-labmgresx3
 esxi_password: '5WEh989_94501'
 vcenter_username: 'administrator@vsphere.local'
 vcenter_password: '5WEh989_94501'
-vcenter_virtual_machine_name: 'YOW-VC-TEST2-v67'
-vcenter_hostname: 'yow-vc-test2'
-vcenter_net_ip_address: '147.11.128.132'
+vcenter_virtual_machine_name: 'PEK-VC-TEST2-v7'
+vcenter_hostname: 'pek-vc-test2'
+vcenter_net_ip_address: '147.11.141.38'
 vcenter_net_prefix: '24'
-vcenter_net_gateway: '147.11.128.1'
+vcenter_net_gateway: '147.11.141.1'
 vcenter_dns_servers: '147.11.136.64'
 ssodomain: 'vsphere.local'
 dnsdomain: 'corp.ad.wrs.com'
 searchpath: "wrs.com"
 vcsa_size: 'tiny'
-# vcsa_ova_file: '/home/danield/lab-images/OVA/v7/VMware-vCenter-Server-Appliance-7.0.0.10400-16386292_OVF10.ova'
-vcsa_ova_file: '/home/danield/lab-images/OVA/v67/VMware-vCenter-Server-Appliance-6.7.0.45000-16708996_OVF10.ova'
-datastore: 'LOCAL_DS1'
-esxi_network: 'VM_128'
+vcsa_ova_file: '/home/danield/lab-images/OVA/v7/VMware-vCenter-Server-Appliance-7.0.2.00200-17958471_OVF10.ova'
+# vcsa_ova_file: '/home/danield/lab-images/OVA/v67/VMware-vCenter-Server-Appliance-6.7.0.45000-16708996_OVF10.ova'
+datastore: 'Datastore1'
+esxi_network: '141_LAN'
 #END Deploy answers

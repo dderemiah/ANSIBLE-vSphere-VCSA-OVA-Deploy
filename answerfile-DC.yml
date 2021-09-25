@@ -2,10 +2,9 @@
 # esxi_password: 'REDACT'
 # vcenter_password: 'REDACT'
 
-datacenter_name: 'TEST-DC'
+datacenter_name: 'PEK-DC'
 cluster_name_list:
-  - 'YOW-Cluster'
-  - 'OTP-Cluster'
+  - 'PEK-Cluster'
 esxi_yow_fqdn:
   - 'ala-vmtaa01.wrs.com'
   - 'ala-vmtaa03.wrs.com'
